@@ -4,23 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter(Collider other){
-        Debug.Log("alien?");
+        Debug.Log("Alien?");
         if(other.tag == "Alien")
         { 
-            Debug.Log("yep");
+            Debug.Log("YES");
             GetComponent<Eaten>().wasEaten = true;
             transform.gameObject.tag = "Ghost";
 
