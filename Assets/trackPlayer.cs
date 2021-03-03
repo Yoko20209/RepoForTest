@@ -5,7 +5,7 @@ using UnityEngine;
 public class trackPlayer : MonoBehaviour
 {
 
-    public float speed;
+    public float speed = 3;
 
     private GameObject player;
 
