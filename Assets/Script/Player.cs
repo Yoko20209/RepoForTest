@@ -6,10 +6,10 @@ public class Player : MonoBehaviour
 {
 
     void OnTriggerEnter(Collider other){
-        Debug.Log("alien?");
+        Debug.Log("Alien?");
         if(other.tag == "Alien")
         { 
-            Debug.Log("yep");
+            Debug.Log("YES");
             GetComponent<Eaten>().wasEaten = true;
             transform.gameObject.tag = "Ghost";
 
